@@ -1,6 +1,6 @@
-s=1
-n= int(input("Ievadi n:"))
-while s<= n:
-    if(n% 2== 0):
+s = 1
+n = int(input("Ievada n="))
+while n > s:
+    if (n % 3 == 0):
         print(n)
-        n-=1
+    n -= 1
