@@ -7,9 +7,9 @@ for i in range(n):
     skaitlis = random.randint(a,b)
     saraksts.append(skaitlis)
 print(saraksts)
-skaits = 0
-for i in range(n-2):
-    if saraksts[i] < saraksts[i+1] > saraksts[i+2]:
-        skaits += 1
-    print(skaits)
-    print(sorted(saraksts))
+skaits=0
+for i in range(n-1):
+    for j in range(i+1,n):
+        if saraksts[i] == saraksts[j]:
+            skaits += 1
+print(skaits)
