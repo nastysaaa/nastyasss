@@ -7,8 +7,11 @@ for i in range(n):
     skaitlis = random.randint(a,b)
     saraksts.append(skaitlis)
 print(saraksts)
-skaits = 0
-for i in range(n-2):
-    if saraksts[i] < saraksts[i+1] > saraksts[i+2]:
-        skaits += 1
-    print(skaits)
+for i in range(n):
+    neatk = True
+    for j in range(n):
+        if saraksts[i] == saraksts[j] and i != j:
+                neatk = False
+                break
+        if neatk == True:
+             print(saraksts[i], end=" ")
